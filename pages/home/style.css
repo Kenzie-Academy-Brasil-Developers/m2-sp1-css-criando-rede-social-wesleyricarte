@@ -1,0 +1,59 @@
+.container-main {
+  width: 60%;
+  display: flex;
+}
+
+.section-aside {
+  width: 30%;
+  gap: 8.125rem;
+}
+
+aside {
+  position: sticky;
+  top: 9rem;
+}
+
+.section-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.title-sugestions {
+  margin-bottom: 3.5rem;
+}
+
+.title-posts {
+  margin: 2.5rem 0rem;
+}
+
+.article-post {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.div-open-like-post {
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+}
+
+.button-open-post {
+ width: 92px;
+ height: 38px;
+ color: var(--color-white-fixed);
+ background-color: var(--color-grey-1);
+ border: none;
+ border-radius: var(--radius-1);
+}
+.button-open-post:hover{
+ background-color: var(--color-grey-0);
+}
+
+.div-like {
+ display: flex;
+ align-items: center;
+ gap: 0.4rem;
+}

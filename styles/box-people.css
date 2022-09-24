@@ -1,0 +1,50 @@
+.box-people-follow {
+  margin: 32px auto;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-people {
+  padding: 0rem 0rem;
+  height: 3.25rem;
+  display: flex;
+}
+
+.box-people-img {
+  height: 100%;
+}
+
+.box-people-img img {
+  height: 100%;
+}
+
+.box-people-description {
+  padding: 0.15rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-people-button {
+  margin: 0.15rem 0rem;
+  padding: 0 12px;
+  height: 28px;
+  border-radius: var(--radius-1);
+  border: solid 1px var(--color-grey-1);
+  color: var(--color-grey-1);
+  background-color: var(--color-white-fixed);
+}
+
+.box-people-button:hover {
+  color: var(--color-brand-1);
+  border: solid 1px var(--color-brand-1);
+  background-color: var(--color-brand-3);
+}
+
+.following {
+  color: var(--color-white-fixed);
+  border: solid 1px var(--color-brand-1);
+  background-color: var(--color-brand-1);
+}

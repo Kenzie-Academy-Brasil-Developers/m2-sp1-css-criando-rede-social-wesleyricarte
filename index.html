@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/inputs.css" />
+    <link rel="stylesheet" href="./styles/modals.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/texts.css" />
+    <link rel="stylesheet" href="./styles/box-people.css" />
+    <link rel="stylesheet" href="./styles/mobileGeneral.css" />
+    <link rel="stylesheet" href="./pages/home/style.css" />
+
+    <script defer src="./script/database/sugestUsers.js"></script>
+    <script defer src="./script/database/users.js"></script>
+    <script defer src="./script/database/posts.js"></script>
+    <script defer src="./pages/home/index.js"></script>
+
+    <title>TechPosters - Home</title>
+  </head>
+
+  <!-- BODY DO HTML-->
+  <body>
+    <!-- CABEÇALHO DO SITE  -->
+    <header class="navbar">
+      <div class="container">
+        <nav class="navbar-items">
+          <img src="./assets/img/logo.svg" alt="TechPosters Logo" />
+          <ul class="navbar-links">
+            <li class="navbar-link">Sair</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CORPO DO SITE -->
+    <main>
+      <div class="container-body">
+        <!-- INÍCIO DO CORPO COM O INPUT PARA CRIAR NOVO POST -->
+        <main class="container-main">
+          <div class="box-people people-log">
+            <div class="box-people-img">
+              <img src="./assets/img/user1.svg" alt="Foto Samuel Leão" />
+            </div>
+            <div class="box-people-description">
+              <h3 class="title2">Samuel Leão</h3>
+              <h4 class="text2">Front end designer</h4>
+            </div>
+          </div>
+
+          <!-- DIV NEW POST AQUI -->
+          <div class="div-new-post">
+            <input
+              type="text"
+              class="input-title-post"
+              placeholder="Insira o título do seu post aqui"
+            />
+            <textarea
+              class="textarea-post"
+              name=""
+              id="new-post"
+              cols="30"
+              rows="6"
+              placeholder="Insira o conteúdo do seu post aqui"
+            ></textarea>
+            <button class="button-post-new" type="submit">Postar</button>
+          </div>
+
+          <section class="section-posts">
+            <!-- TÍTULO POSTS AQUI -------------- -->
+            <h1 class="title-posts title1">Posts</h1>
+
+            <!-- POSTS A PARTIR DAQUI ---------------------- -->
+
+            <!-- POST 01 AQUI -->
+            <article class="article-post">
+              <div class="box-people">
+                <div class="box-people-img">
+                  <img src="./assets/img/user2.svg" alt="Foto Samuel Persuhn" />
+                </div>
+                <div class="box-people-description">
+                  <h3 class="title2">Samuel Persuhn</h3>
+                  <h4 class="text2">Front end Engineer</h4>
+                </div>
+              </div>
+              <h2 class="title1">
+                Empresa de Tecnologia da Informação abre vagas para programa de
+                estágio
+              </h2>
+              <h5 class="text2">
+                A Generic Digital, empresa natalence especializada em Tecnologia
+                da Informação, irá iniciar o seu sexto programa de estágio, com
+                o prazo de inscrições entre os dias 10 e 28 de agosto.
+              </h5>
+              <div class="div-open-like-post">
+                <button data-modal-control="post-1" class="button-open-post">
+                  Abrir Post
+                </button>
+                <div class="div-like">
+                  <button class="button-like-post">Like</button>
+                  <h6 class="counter-like text3">25</h6>
+                </div>
+              </div>
+            </article>
+
+            <!-- POST 02 AQUI -->
+            <article class="article-post">
+              <div class="box-people">
+                <div class="box-people-img">
+                  <img src="./assets/img/user4.svg" alt="Foto Carla Maria" />
+                </div>
+                <div class="box-people-description">
+                  <h3 class="title2">Carla Maria</h3>
+                  <h4 class="text2">Back end Engineer</h4>
+                </div>
+              </div>
+              <h2 class="title1">
+                Como melhorar sua lógica de programação? Desenvolvemos 5 passos
+                para te ajudar
+              </h2>
+              <h5 class="text2">
+                Para quem está começando na área de T.I, em pleno século 21 este
+                conceito pode parecer um grande desafio, pois requer muitas
+                habilidades em diversas áreas de estudo, principalmente...
+              </h5>
+              <div class="div-open-like-post">
+                <button data-modal-control="post-2" class="button-open-post">
+                  Abrir Post
+                </button>
+                <div class="div-like">
+                  <button class="button-like-post">Like</button>
+                  <h6 class="counter-like text3">19</h6>
+                </div>
+              </div>
+            </article>
+
+            <!-- POST 03 AQUI -->
+            <article class="article-post">
+              <div class="box-people">
+                <div class="box-people-img">
+                  <img src="./assets/img/user5.svg" alt="Foto Júlia Martins" />
+                </div>
+                <div class="box-people-description">
+                  <h3 class="title2">Júlia Martins</h3>
+                  <h4 class="text2">Devop's</h4>
+                </div>
+              </div>
+              <h2 class="title1">
+                NextJS como essa ferramenta revolucionou a maneira de
+                desenvolver sites
+              </h2>
+              <h5 class="text2">
+                Provavelmente, você já ouviu falar do Next.js, considerado o
+                framework mais popular do mercado. Com a expansão do mercado de
+                tecnologia e sua influência em serviços de diver...
+              </h5>
+              <div class="div-open-like-post">
+                <button data-modal-control="post-3" class="button-open-post">
+                  Abrir Post
+                </button>
+                <div class="div-like">
+                  <button class="button-like-post">Like</button>
+                  <h6 class="counter-like text3">8</h6>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+
+        <!-- SECTION ASIDE ---------------------------- -->
+        <section class="section-aside">
+          <aside>
+            <h2 class="title-sugestions title2">Sugestões para você seguir</h2>
+            <div class="box-people-follow">
+              <div class="box-people">
+                <div class="box-people-img">
+                  <img src="./assets/img/user3.svg" alt="User 3" />
+                </div>
+                <div class="box-people-description">
+                  <h3 class="title2">Carlos Lima</h3>
+                  <h4 class="text2">UX e UI Desginer</h4>
+                </div>
+              </div>
+              <button class="box-people-button">Seguir</button>
+            </div>
+            <div class="box-people-follow">
+              <div class="box-people">
+                <div class="box-people-img">
+                  <img src="./assets/img/user6.svg" alt="User 6" />
+                </div>
+                <div class="box-people-description">
+                  <h3 class="title2">Larissa Camargo</h3>
+                  <h4 class="text2">UI Developer</h4>
+                </div>
+              </div>
+              <button class="box-people-button">Seguir</button>
+            </div>
+            <div class="box-people-follow">
+              <div class="box-people">
+                <div class="box-people-img">
+                  <img src="./assets/img/user7.svg" alt="User 7" />
+                </div>
+                <div class="box-people-description">
+                  <h3 class="title2">Filipe Gutierry</h3>
+                  <h4 class="text2">Full Stack Developer</h4>
+                </div>
+              </div>
+              <button class="box-people-button">Seguir</button>
+            </div>
+          </aside>
+        </section>
+      </div>
+
+      <!-- SESSÃO DE POSTS WRAPPER -->
+      <div class="modal-wrapper" id="post-1">
+        <div class="modal">
+          <button data-modal-control="post-1" class="modal-close font-close">
+            X
+          </button>
+          <div class="modal-body">
+            <div class="box-people">
+              <div class="box-people-img">
+                <img src="./assets/img/user2.svg" alt="Samuel Persuhn" />
+              </div>
+              <div class="box-people-description">
+                <h3 class="title2">Samuel Persuhn</h3>
+                <h4 class="text2">Front end Engineer</h4>
+              </div>
+            </div>
+            <h2 class="title1">
+              Empresa de Tecnologia da Informação abre vagas para programa de
+              estágio
+            </h2>
+            <h5 class="text1">
+              A Generic Digital, empresa natalence especializada em Tecnologia
+              da Informação, irá iniciar o seu sexto programa de estágio, com o
+              prazo de inscrições entre os dias 10 e 28 de agosto.
+            </h5>
+            <h5 class="text1">
+              O programa é conhecido como Generic Wars, com inspiração nos
+              filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos
+              para se tornar cavaleiros Jedi, que compõem o lado bom da força.
+            </h5>
+            <h5 class="text1">
+              A empresa explica que este princípio também é aplicado na empresa,
+              em que a ideia é desenvolver talentos na área de tecnologia que
+              vão aprender, desde cedo, a colocar a mão na massa, atuando
+              diretamente com clientes nacionais e internacionais.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-wrapper" id="post-2">
+        <div class="modal">
+          <button data-modal-control="post-2" class="modal-close font-close">
+            X
+          </button>
+          <div class="modal-body">
+            <div class="box-people">
+              <div class="box-people-img">
+                <img src="./assets/img/user4.svg" alt="Foto Carla Maria" />
+              </div>
+              <div class="box-people-description">
+                <h3 class="title2">Carla Maria</h3>
+                <h4 class="text2">Back end Engineer</h4>
+              </div>
+            </div>
+            <h2 class="title1">
+              Como melhorar sua lógica de programação? Desenvolvemos 5 passos
+              para te ajudar
+            </h2>
+            <h5 class="text1">
+              Para quem está começando na área de T.I, em pleno século 21 este
+              conceito pode parecer um grande desafio, pois requer muitas
+              habilidades em diversas áreas de estudo, principalmente lógica
+            </h5>
+            <h5 class="text1">
+              Como já informado, algoritmos são um conjunto de passos definidos
+              para gerar um resultado. Aprender o conceito de instruções simples
+              é a primeira etapa para compreender lógica de programação. No seu
+              dia a dia você já aplicou um algoritmo e não percebeu. Como
+              exemplo temos a instrução “escovar os dentes”:
+            </h5>
+            <h6 class="text1">- Pegar escova;</h6>
+            <h6 class="text1">- Ligar torneira;</h6>
+            <h6 class="text1">- Limpar escova;</h6>
+            <h6 class="text1">- Fechar torneira;</h6>
+            <h6 class="text1">- Colocar pasta na escova;</h6>
+            <h6 class="text1">- Escovar os dentes;</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-wrapper" id="post-3">
+        <div class="modal">
+          <button data-modal-control="post-3" class="modal-close font-close">
+            X
+          </button>
+          <div class="modal-body">
+            <div class="box-people">
+              <div class="box-people-img">
+                <img src="./assets/img/user5.svg" alt="Foto Júlia Martins" />
+              </div>
+              <div class="box-people-description">
+                <h3 class="title2">Júlia Martins</h3>
+                <h4 class="text2">Devop's</h4>
+              </div>
+            </div>
+            <h2 class="title1">
+              Como melhorar sua lógica de programação? Desenvolvemos 5 passos
+              para te ajudar
+            </h2>
+            <h5 class="text1">
+              Provavelmente, você já ouviu falar do Next.js, considerado o
+              framework mais popular do mercado. Com a expansão do mercado de
+              tecnologia e sua influência em serviços de diversos segmentos
+            </h5>
+            <h5 class="text1">
+              Para tornar o carregamento de páginas mais rápido, o Next.js
+              quebra o código automaticamente e é assim que assegura uma
+              capacidade de carregamento de página mais rápida, já que os sites
+              são criados para suportar um grande volume de acessos.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

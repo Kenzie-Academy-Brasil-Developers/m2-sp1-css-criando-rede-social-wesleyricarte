@@ -23,3 +23,39 @@ const posts = [
     text: "A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.",
   },
 ];
+
+const buttonsControllersModal = document.querySelectorAll(
+  "[data-modal-control]"
+);
+
+// console.log(buttonsControllersModal);
+
+for (let i = 0; i < buttonsControllersModal.length; i++) {
+  buttonsControllersModal[i].addEventListener("click", function () {
+    // Event.perventDefault();
+    let valueDataModalControl =
+      buttonsControllersModal[i].getAttribute("data-modal-control");
+
+    console.log(valueDataModalControl);
+    document
+      .getElementById(valueDataModalControl)
+      .classList.toggle("show-modal");
+  });
+}
+
+const buttonTexts = ["Seguir", "Seguindo"];
+
+const buttonToggle = document.querySelectorAll(".box-people-button");
+console.log(buttonToggle);
+
+for (let i = 0; i < buttonToggle.length; i++) {
+  buttonToggle[i].addEventListener("click", ()=>{
+    let toggleFollowing = buttonToggle[i].classList.toggle("following");
+    if (toggleFollowing) {
+      buttonToggle[i].innerText = `${buttonTexts[1]}`
+    }else {
+      buttonToggle[i].innerText = `${buttonTexts[0]}`
+
+    }
+  })
+}
